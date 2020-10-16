@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "WSSocial"
+Date ""
+Rev ""
+Comp "UTE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4050 U?
+U 4 1 5FD0F805
+P 3550 2850
+F 0 "U?" H 3550 3050 50  0000 C CNN
+F 1 "4050" H 3550 2650 50  0000 C CNN
+F 2 "" H 3550 2850 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3550 2850 50  0001 C CNN
+	4    3550 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 RFRX1:A
+U 1 1 5FD0F80B
+P 7400 2250
+F 0 "RFRX1:A" V 7500 2050 50  0000 L CNN
+F 1 "RF RECEIVER" V 7400 2450 50  0000 L CNN
+F 2 "" H 7400 2250 50  0001 C CNN
+F 3 "~" H 7400 2250 50  0001 C CNN
+	1    7400 2250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FD0F811
+P 7400 3200
+F 0 "J?" V 7350 2800 50  0000 L CNN
+F 1 "CONN-SIL4" V 7500 2950 50  0000 L CNN
+F 2 "" H 7400 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FD0F817
+P 5300 3200
+F 0 "J?" V 5250 2800 50  0000 L CNN
+F 1 "CONN-SIL4" V 5400 2950 50  0000 L CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2450 7400 2700
+Wire Wire Line
+	7300 2450 7300 2700
+Wire Wire Line
+	7200 2450 7200 2500
+Wire Wire Line
+	5400 2450 5400 2500
+Wire Wire Line
+	5400 2500 6350 2500
+Connection ~ 5400 2500
+Connection ~ 7200 2500
+$Comp
+L power:+5V #PWR?
+U 1 1 5FD0F824
+P 6350 2350
+F 0 "#PWR?" H 6350 2200 50  0001 C CNN
+F 1 "+5V" H 6365 2523 50  0000 C CNN
+F 2 "" H 6350 2350 50  0001 C CNN
+F 3 "" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2350 6350 2500
+Connection ~ 6350 2500
+Wire Wire Line
+	6350 2500 7200 2500
+$Comp
+L Device:R R?
+U 1 1 5FD0F82D
+P 5800 2700
+F 0 "R?" V 5700 2700 50  0000 C CNN
+F 1 "2M2" V 5900 2700 50  0000 C CNN
+F 2 "" V 5730 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2700 5300 2700
+Connection ~ 5300 2700
+Wire Wire Line
+	5300 2700 5300 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5FD0F836
+P 6050 2800
+F 0 "#PWR?" H 6050 2550 50  0001 C CNN
+F 1 "GND" H 6055 2627 50  0000 C CNN
+F 2 "" H 6050 2800 50  0001 C CNN
+F 3 "" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2700 6050 2700
+Wire Wire Line
+	6050 2700 6050 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5FD0F83E
+P 7850 2850
+F 0 "#PWR?" H 7850 2600 50  0001 C CNN
+F 1 "GND" H 7855 2677 50  0000 C CNN
+F 2 "" H 7850 2850 50  0001 C CNN
+F 3 "" H 7850 2850 50  0001 C CNN
+	1    7850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2850 7850 2700
+Wire Wire Line
+	7850 2700 7400 2700
+Connection ~ 7400 2700
+Wire Wire Line
+	7400 2700 7300 2700
+Connection ~ 7300 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FD0F849
+P 4950 2550
+F 0 "#PWR?" H 4950 2300 50  0001 C CNN
+F 1 "GND" H 4955 2377 50  0000 C CNN
+F 2 "" H 4950 2550 50  0001 C CNN
+F 3 "" H 4950 2550 50  0001 C CNN
+	1    4950 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2550 4950 2500
+Wire Wire Line
+	4950 2500 5100 2500
+Connection ~ 5100 2500
+Wire Wire Line
+	5100 2500 5100 2450
+Wire Wire Line
+	5400 2500 5400 3000
+Wire Wire Line
+	5300 2700 5300 3000
+Wire Wire Line
+	5200 2450 5200 3000
+Wire Wire Line
+	5100 2500 5100 2850
+Wire Wire Line
+	7200 2500 7200 3000
+Wire Wire Line
+	7300 2700 7300 3000
+Wire Wire Line
+	7400 2700 7400 3000
+Wire Wire Line
+	7500 2450 7500 3000
+$Comp
+L Device:R R?
+U 1 1 5FD0F85B
+P 4200 2850
+F 0 "R?" V 4100 2850 50  0000 C CNN
+F 1 "100K" V 4300 2850 50  0000 C CNN
+F 2 "" V 4130 2850 50  0001 C CNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD0F861
+P 4500 3100
+F 0 "R?" H 4570 3146 50  0000 L CNN
+F 1 "10K" H 4570 3055 50  0000 L CNN
+F 2 "" V 4430 3100 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2850 4050 2850
+Wire Wire Line
+	4350 2850 4500 2850
+Wire Wire Line
+	4500 2850 4500 2950
+Wire Wire Line
+	4500 2850 5100 2850
+Connection ~ 4500 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	5100 2850 5100 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5FD0F86E
+P 4500 3400
+F 0 "#PWR?" H 4500 3150 50  0001 C CNN
+F 1 "GND" H 4505 3227 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3400 4500 3250
+$Comp
+L Connector_Generic:Conn_01x04 RFRX1:B
+U 1 1 5FD0F878
+P 5300 2250
+F 0 "RFRX1:B" V 5400 2000 50  0000 L CNN
+F 1 "RF RECEIVER" V 5300 2450 50  0000 L CNN
+F 2 "" H 5300 2250 50  0001 C CNN
+F 3 "~" H 5300 2250 50  0001 C CNN
+F 4 "J" H 5300 2250 50  0001 C CNN "Spice_Primitive"
+F 5 "Conn_01x04" H 5300 2250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 2250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5300 2250
+	0    1    -1   0   
+$EndComp
+Text HLabel 2900 2850 0    50   Output ~ 0
+TX_RF
+Wire Wire Line
+	2900 2850 3250 2850
+$EndSCHEMATC
